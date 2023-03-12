@@ -37,8 +37,6 @@ class YaUploader:
         href = result.get('href', '')
         response = requests.put(href, data=open(file_name, 'rb'))
         response.raise_for_status()
-        # if response.status_code == 201:
-        #     print('Created')
 
 
 def make_local_folder():
